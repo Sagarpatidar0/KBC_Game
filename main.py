@@ -1,6 +1,6 @@
-import que
+from module import que
 import time
-from ask_que import ask_que
+from module.ask_que import ask_que
 import shutil
     
 

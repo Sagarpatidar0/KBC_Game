@@ -1,4 +1,4 @@
-import fifty_fifty
+from module import fifty_fifty
 
 
 def ask_que(que, price_list, i, columns, lifeline, used_lifeline):

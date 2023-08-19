@@ -1,7 +1,7 @@
 import pandas as pd
 
 def read_que():
-    questions = pd.read_csv("question_bank.csv")
+    questions = pd.read_csv("../Data/question_bank.csv")
     return questions
 
 def save_que(que_data):
