@@ -1,4 +1,4 @@
-from module import que
+from module import que, TextToSpeech
 import time
 from module.ask_que import ask_que
 import shutil
@@ -50,11 +50,16 @@ for i in range(15):
 
     else:
         print("Incorrect Answer!".center(columns))
+        TextToSpeech.play("Incorrect Answer!")
         print(f"Correct Answer is option {question[2]}".center(columns))
+        TextToSpeech.play(f"The Correct Answer is option {question[2]}")
         if i == 0:
             print("Unfortunately, you didn't win any prize. Better luck next time!".center(columns))
+            TextToSpeech.play("Unfortunately, you didn't win any prize. Better luck next time!")
             break
         print(f"Congratulations! You won {prize_list[i]}".center(columns))
+        TextToSpeech.play(f"Congratulations! You won {prize_list[i]}")
+        TextToSpeech.play(f"Thank you for playing Kaun Banega Crorepati")
         break
 
 
